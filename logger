@@ -1,0 +1,12 @@
+const log = require('node-file-logger');
+
+log.SetUserOptions({
+    folderPath: './logs/',
+    dateBasedFileNaming: true,
+    fileNamePrefix: 'DailyLogs_',
+    fileNameExtension: '.log',
+    dateFormat: 'YYYY_MM_D',
+    timeFormat: 'h:mm:ss A',
+});
+
+module.exports = log
